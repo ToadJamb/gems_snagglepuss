@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative "snagglepuss/version"
+require_relative 'snagglepuss/version'
 
 if defined?(ColorMeRad)
   if [
