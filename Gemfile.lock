@@ -1,0 +1,19 @@
+PATH
+  remote: .
+  specs:
+    snagglepuss (0.1.0.alpha)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    color_me_rad (0.0.4)
+
+PLATFORMS
+  x86_64-linux
+
+DEPENDENCIES
+  color_me_rad (~> 0.0.4)
+  snagglepuss!
+
+BUNDLED WITH
+   2.4.18
