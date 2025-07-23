@@ -7,7 +7,7 @@ if defined?(ColorMeRad)
     :exclamation,
     :partition,
     :path,
-    :function,
+    :location,
   ].all?{ |key| ColorMeRad.color_for_key(key) == :light_yellow }
     ColorMeRad.configure do |config|
       config.set_colors \
@@ -16,7 +16,7 @@ if defined?(ColorMeRad)
         :exclamation => :green,
         :path => :blue,
         :partition => :light_black,
-        :function => :magenta
+        :location => :magenta
     end
   end
 end

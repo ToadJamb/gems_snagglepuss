@@ -8,13 +8,18 @@ module Snagglepuss
       return line unless Colorize.enabled?
       return Colorize.key(line, :stacktrace) unless full_match?(line)
 
-      path, number, description = line.split(':')
-      function = description.match(/`(.*)'/)[1].to_s
+      values = line.split(':')
 
-      '%s:%s in `%s`' % [
+      path = values[0]
+      number = values[1]
+      description = values[2..-1].join(':')
+
+      location = description.gsub(/in /, '')
+
+      '%s:%s in %s' % [
         Colorize.key(path, :path),
         Colorize.data(number.to_i),
-        Colorize.key(function, :function),
+        Colorize.key(location, :location),
       ]
     end
 
