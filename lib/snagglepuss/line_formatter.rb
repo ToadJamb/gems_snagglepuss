@@ -26,7 +26,7 @@ module Snagglepuss
     private
 
     def full_match?(line)
-      line.match(/[\/\w]+:\d+:in `.*'$/)
+      line.match(/[\/\w]+.*:\d+:in `.*'$/)
     end
   end
 end
