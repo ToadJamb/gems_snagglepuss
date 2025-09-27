@@ -16,7 +16,8 @@ if defined?(ColorMeRad)
         :exclamation => :green,
         :path => :blue,
         :partition => :light_black,
-        :location => :magenta
+        :location => :magenta,
+        :stacktrace => :blue
     end
   end
 end
